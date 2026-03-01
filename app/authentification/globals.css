@@ -124,16 +124,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-/* Animations de révélation des sections au scroll */
-.section-reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition:
-    opacity 0.6s ease-out,
-    transform 0.6s ease-out;
-}
-.section-reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
