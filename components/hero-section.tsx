@@ -2,10 +2,27 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
 
+const HERO_VIDEO_SRC = "/video/video.mp4"
+
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-background">
-      <div className="mx-auto max-w-7xl px-4 pb-16 pt-16 lg:px-8 lg:pb-24 lg:pt-24">
+    <section className="relative overflow-hidden bg-black">
+      {/* Video de fond */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <video
+          className="h-full w-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src={HERO_VIDEO_SRC} type="video/mp4" />
+        </video>
+        {/* Voile sombre pour lisibilite du texte */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/75 to-emerald-900/40" />
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-16 lg:px-8 lg:pb-24 lg:pt-24">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col gap-6">
             <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-secondary px-3 py-1">
