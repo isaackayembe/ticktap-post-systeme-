@@ -65,7 +65,7 @@ export function FeaturesSection() {
     <section id="fonctionnalites" className="bg-background py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mx-auto mb-12 max-w-2xl text-center lg:mb-16">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#f47920]">
             Fonctionnalites
           </p>
           <h2
@@ -84,10 +84,10 @@ export function FeaturesSection() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group flex flex-col gap-4 rounded-2xl border border-border bg-card p-6 transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5"
+              className="group flex flex-col gap-4 rounded-2xl border border-border/70 bg-card p-6 transition-all hover:-translate-y-1 hover:border-[#f47920]/40 hover:shadow-xl hover:shadow-[#f47920]/10"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 transition-colors group-hover:bg-primary/20">
-                <feature.icon className="h-6 w-6 text-primary" />
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0b2f52]/10 transition-colors group-hover:bg-[#0b2f52]/18">
+                <feature.icon className="h-6 w-6 text-[#f47920]" />
               </div>
               <h3 className="text-lg font-semibold text-foreground" style={{ fontFamily: "var(--font-heading)" }}>
                 {feature.title}

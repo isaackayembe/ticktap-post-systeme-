@@ -8,7 +8,7 @@ const modules = [
     description:
       "Accedez a vos donnees detaillees depuis n'importe quel appareil connecte. Suivez vos KPIs en temps reel.",
     image: "/images/dashboard-analytics.jpg",
-    imageAlt: "Tableau de bord analytique VentaPOS",
+    imageAlt: "Tableau de bord analytique TicktapPOS",
   },
   {
     icon: Settings,
@@ -16,7 +16,7 @@ const modules = [
     description:
       "Gerez produits, categories, employes et parametres depuis une interface web complete et intuitive.",
     image: "/images/dashboard-analytics.jpg",
-    imageAlt: "Interface Back Office VentaPOS",
+    imageAlt: "Interface Back Office TicktapPOS",
   },
   {
     icon: UtensilsCrossed,
@@ -24,7 +24,7 @@ const modules = [
     description:
       "Optimisez la communication entre la caisse et la cuisine. Les commandes s'affichent instantanement.",
     image: "/images/kitchen-display.jpg",
-    imageAlt: "Systeme d'affichage cuisine KDS VentaPOS",
+    imageAlt: "Systeme d'affichage cuisine KDS TicktapPOS",
   },
   {
     icon: Monitor,
@@ -32,7 +32,7 @@ const modules = [
     description:
       "Ameliorez l'experience client avec un ecran secondaire affichant le detail des achats en cours.",
     image: "/images/kitchen-display.jpg",
-    imageAlt: "Ecran d'affichage client VentaPOS",
+    imageAlt: "Ecran d'affichage client TicktapPOS",
   },
 ]
 
@@ -41,7 +41,7 @@ export function ModulesSection() {
     <section id="modules" className="border-t border-border bg-card py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mx-auto mb-12 max-w-2xl text-center lg:mb-16">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#f47920]">
             Modules
           </p>
           <h2
@@ -59,7 +59,7 @@ export function ModulesSection() {
           {modules.map((mod) => (
             <div
               key={mod.title}
-              className="group overflow-hidden rounded-2xl border border-border bg-background transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5"
+              className="group overflow-hidden rounded-2xl border border-border/70 bg-background transition-all hover:-translate-y-1 hover:border-[#f47920]/40 hover:shadow-xl hover:shadow-[#f47920]/10"
             >
               <div className="relative aspect-video overflow-hidden bg-muted">
                 <Image
@@ -72,8 +72,8 @@ export function ModulesSection() {
               </div>
               <div className="flex flex-col gap-3 p-6">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                    <mod.icon className="h-5 w-5 text-primary" />
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#0b2f52]/12">
+                    <mod.icon className="h-5 w-5 text-[#f47920]" />
                   </div>
                   <h3
                     className="text-lg font-semibold text-foreground"

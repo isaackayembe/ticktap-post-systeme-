@@ -155,7 +155,7 @@ export function PosSystemSection() {
     <section id="pos-system" className="bg-muted/40 py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mx-auto mb-10 max-w-3xl text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#f47920]">
             ticktapPOS
           </p>
           <h2
@@ -182,8 +182,8 @@ export function PosSystemSection() {
                 onClick={() => setActiveId(section.id)}
                 className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
                   isActive
-                    ? "bg-primary text-primary-foreground shadow-sm"
-                    : "bg-card text-muted-foreground hover:text-foreground"
+                    ? "bg-[#f47920] text-white shadow-[0_10px_24px_rgba(244,121,32,0.28)]"
+                    : "border border-border/70 bg-card text-muted-foreground hover:text-foreground hover:border-[#f47920]/40"
                 }`}
               >
                 <Icon className="h-4 w-4" />
@@ -195,7 +195,7 @@ export function PosSystemSection() {
 
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div className="order-2 space-y-4 lg:order-1">
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#0b2f52]/10 px-3 py-1 text-xs font-semibold text-[#0b2f52]">
               <ActiveIcon className="h-3 w-3" />
               <span>{activeSection.label}</span>
             </div>
@@ -211,7 +211,7 @@ export function PosSystemSection() {
             <ul className="mt-4 space-y-2 text-sm leading-relaxed text-muted-foreground">
               {activeSection.bullets.map((item) => (
                 <li key={item} className="flex gap-2">
-                  <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                  <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#f47920]" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -220,7 +220,7 @@ export function PosSystemSection() {
 
           <div className="order-1 lg:order-2">
             <div className="relative overflow-hidden rounded-3xl border border-border bg-card p-4 shadow-sm sm:p-6">
-              <div className="aspect-[4/3] w-full rounded-2xl bg-gradient-to-br from-primary/15 via-primary/5 to-emerald-100 dark:to-primary/20" />
+              <div className="aspect-[4/3] w-full rounded-2xl bg-gradient-to-br from-[#0b2f52]/18 via-[#0d3c6c]/10 to-[#f47920]/18 dark:from-[#0b2f52]/22 dark:via-[#0d3c6c]/14 dark:to-[#f47920]/22" />
               <p className="mt-4 text-xs text-muted-foreground sm:text-sm">
                 Illustration de la fonctionnalite <span className="font-semibold">{activeSection.label}</span> dans
                 ticktapPOS. Remplacez ce bloc par une capture d&apos;ecran de votre application si vous le souhaitez.
@@ -232,4 +232,3 @@ export function PosSystemSection() {
     </section>
   )
 }
-

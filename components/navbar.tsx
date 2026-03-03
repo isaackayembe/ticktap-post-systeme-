@@ -20,7 +20,7 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-card/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-border/70 bg-card/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
           <Image
@@ -41,7 +41,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-[#f47920]"
             >
               {link.label}
             </Link>
@@ -49,10 +49,17 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
+          <Button
+            variant="ghost"
+            size="sm"
+            className="text-muted-foreground hover:text-[#f47920]"
+          >
             Connexion
           </Button>
-          <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button
+            size="sm"
+            className="bg-[#f47920] text-white shadow-[0_10px_24px_rgba(244,121,32,0.28)] transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#d8661d] hover:shadow-[0_14px_30px_rgba(244,121,32,0.4)]"
+          >
             Commencer gratuitement
           </Button>
         </div>
@@ -77,7 +84,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-[#f47920]"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
@@ -85,10 +92,17 @@ export function Navbar() {
             ))}
           </nav>
           <div className="mt-4 flex flex-col gap-2">
-            <Button variant="ghost" size="sm" className="w-full justify-start text-muted-foreground">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="w-full justify-start text-muted-foreground hover:text-[#f47920]"
+            >
               Connexion
             </Button>
-            <Button size="sm" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button
+              size="sm"
+              className="w-full bg-[#f47920] text-white shadow-[0_10px_24px_rgba(244,121,32,0.28)] hover:bg-[#d8661d]"
+            >
               Commencer gratuitement
             </Button>
           </div>

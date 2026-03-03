@@ -5,7 +5,7 @@ const testimonials = [
     name: "Jean M.",
     role: "Proprietaire de Supermarche",
     quote:
-      "Depuis que nous utilisons VentaPOS, notre gestion des stocks est devenue simple et efficace. Je recommande vivement cette solution.",
+      "Depuis que nous utilisons TicktapPOS, notre gestion des stocks est devenue simple et efficace. Je recommande vivement cette solution.",
     initials: "JM",
   },
   {
@@ -35,7 +35,7 @@ function StarRating() {
   return (
     <div className="flex gap-0.5">
       {Array.from({ length: 5 }).map((_, i) => (
-        <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+        <Star key={i} className="h-4 w-4 fill-[#f47920] text-[#f47920]" />
       ))}
     </div>
   )
@@ -46,7 +46,7 @@ export function TestimonialsSection() {
     <section id="temoignages" className="bg-background py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mx-auto mb-12 max-w-2xl text-center lg:mb-16">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-primary">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#f47920]">
             Temoignages
           </p>
           <h2
@@ -64,15 +64,15 @@ export function TestimonialsSection() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="flex flex-col gap-4 rounded-2xl border border-border bg-card p-6"
+              className="flex flex-col gap-4 rounded-2xl border border-border/70 bg-card p-6 shadow-[0_12px_30px_rgba(11,47,82,0.08)] transition-transform duration-200 hover:-translate-y-1 hover:border-[#f47920]/35 hover:shadow-[0_18px_36px_rgba(244,121,32,0.12)]"
             >
               <StarRating />
               <p className="flex-1 text-sm leading-relaxed text-muted-foreground">
                 {'"'}{testimonial.quote}{'"'}
               </p>
               <div className="flex items-center gap-3 border-t border-border pt-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                  <span className="text-sm font-semibold text-primary">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0b2f52]/10">
+                  <span className="text-sm font-semibold text-[#0b2f52]">
                     {testimonial.initials}
                   </span>
                 </div>

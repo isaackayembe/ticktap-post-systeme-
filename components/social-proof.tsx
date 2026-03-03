@@ -19,8 +19,8 @@ export function SocialProof() {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           {stats.map((stat) => (
             <div key={stat.label} className="flex flex-col items-center gap-3 text-center">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-                <stat.icon className="h-6 w-6 text-primary" />
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0b2f52]/10">
+                <stat.icon className="h-6 w-6 text-[#f47920]" />
               </div>
               <p className="text-3xl font-bold text-foreground" style={{ fontFamily: "var(--font-heading)" }}>
                 {stat.value}

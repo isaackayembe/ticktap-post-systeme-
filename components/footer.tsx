@@ -34,7 +34,7 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#0b2f52]">
                 <svg
                   width="16"
                   height="16"
@@ -56,7 +56,7 @@ export function Footer() {
                 className="text-lg font-bold text-foreground"
                 style={{ fontFamily: "var(--font-heading)" }}
               >
-                VentaPOS
+                TicktapPOS
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
@@ -65,7 +65,7 @@ export function Footer() {
             <div className="mt-6 flex gap-4">
               <a
                 href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-lg bg-muted text-muted-foreground transition-colors hover:bg-primary/10 hover:text-primary"
+                className="flex h-9 w-9 items-center justify-center rounded-lg bg-muted text-muted-foreground transition-colors hover:bg-[#f47920]/10 hover:text-[#f47920]"
                 aria-label="Twitter"
               >
                 <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
@@ -74,7 +74,7 @@ export function Footer() {
               </a>
               <a
                 href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-lg bg-muted text-muted-foreground transition-colors hover:bg-primary/10 hover:text-primary"
+                className="flex h-9 w-9 items-center justify-center rounded-lg bg-muted text-muted-foreground transition-colors hover:bg-[#f47920]/10 hover:text-[#f47920]"
                 aria-label="LinkedIn"
               >
                 <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
@@ -83,7 +83,7 @@ export function Footer() {
               </a>
               <a
                 href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-lg bg-muted text-muted-foreground transition-colors hover:bg-primary/10 hover:text-primary"
+                className="flex h-9 w-9 items-center justify-center rounded-lg bg-muted text-muted-foreground transition-colors hover:bg-[#f47920]/10 hover:text-[#f47920]"
                 aria-label="Facebook"
               >
                 <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
@@ -103,7 +103,7 @@ export function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                      className="text-sm text-muted-foreground transition-colors hover:text-[#f47920]"
                     >
                       {link.label}
                     </Link>
@@ -116,7 +116,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} VentaPOS. Tous droits reserves.
+            &copy; {new Date().getFullYear()} TicktapPOS. Tous droits reserves.
           </p>
           <p className="text-sm text-muted-foreground">
             Fait avec soin pour les commercants du monde entier.
